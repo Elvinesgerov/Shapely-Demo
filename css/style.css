@@ -1,0 +1,825 @@
+/* ============================================ Scroll CSS ======================================= */
+::-webkit-scrollbar {
+ width: 10px;
+ background-color: darkblue;
+}
+
+::-webkit-scrollbar-thumb {
+ background-color: lightblue;
+}
+
+.generally_scrol {
+ border: none;
+ border-radius: 15px;
+ width: 4%;
+ height: 56px;
+ background-color: blue;
+ display: flex;
+ align-items: center;
+ position: fixed;
+ z-index: 1;
+ font-size: 1.8rem;
+ right: 15px;
+ justify-content: center;
+ top: 90%;
+ color: white;
+ display: none;
+}
+
+/* ============================================ Scroll CSS ======================================= */
+
+
+/* ============================================ Header CSS ======================================= */
+header {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ padding: 40px 0;
+ width: 100%;
+ min-height: 50px;
+ background-color: white;
+ position: fixed;
+ z-index: 99;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+header h1 {
+ font-weight: 200;
+ font-size: 35px;
+ color: white;
+ background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0, 255, 0) 14.28%, rgb(0, 255, 255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+ background-size: 600vw 600vw;
+ -webkit-text-fill-color: transparent;
+ -webkit-background-clip: text;
+ animation: slide 10s linear infinite forwards;
+}
+
+@keyframes slide {
+ 0% {
+  background-position-x: 0%;
+ }
+
+ 100% {
+  background-position-x: 600vw;
+ }
+}
+
+
+/* ============================================ Nav CSS ======================================= */
+nav ul {
+ display: flex;
+ gap: 35px;
+ list-style: none;
+ font-size: 21px;
+}
+
+nav a {
+ text-decoration: none;
+ color: black;
+ transition: 0.7s;
+}
+
+nav a:hover {
+ color: blue;
+}
+
+/* ============================================ Nav CSS ======================================= */
+/* ============================================ Header CSS ======================================= */
+
+
+/* ============================================ Main CSS ======================================= */
+.zero {
+ background-image: url("../image/zero.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ color: white;
+ padding: 24% 0;
+}
+
+.zero h2 {
+ font-size: 2.6rem;
+}
+
+.zero p {
+ margin: 30px 0;
+ font-size: 1.2rem;
+}
+
+.boxs_button {
+ margin-top: 15px;
+ margin-left: -50px;
+ display: flex;
+ gap: 110px;
+}
+
+.boxs_button button {
+ width: 170px;
+ height: 50px;
+ font-size: 19px;
+ border: 0;
+ border-radius: 10px;
+}
+
+.read {
+ background-color: purple;
+ color: white;
+ transition: 0.7s;
+}
+
+.read:hover {
+ background-color: white;
+ color: purple;
+ transform: scale(1.1);
+ font-weight: 700;
+}
+
+.dowloand {
+ background-color: white;
+ color: black;
+ transition: 0.7s;
+}
+
+.dowloand:hover {
+ background-color: black;
+ color: white;
+ font-weight: 700;
+ transform: scale(1.1);
+}
+
+.main__seo {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+ gap: 100px;
+}
+
+.main__left img {
+ width: 650px;
+}
+
+.main__right h2 {
+ font-weight: 300;
+ font-size: 28px;
+}
+
+.main__right p {
+ font-size: 21px;
+ width: 450px;
+ margin: 25px 0;
+ color: rgba(128, 128, 128, 0.733);
+}
+
+.main__right button {
+ width: 170px;
+ height: 40px;
+ background-color: purple;
+ color: white;
+ border: 0;
+ border-radius: 10px;
+ font-size: 19px;
+ transition: 0.7s;
+}
+
+.main__right button:hover {
+ background-color: green;
+ color: white;
+ transform: scale(1.1);
+}
+
+.two {
+ background-color: rgba(128, 128, 128, 0.208) !important;
+ height: 700px;
+}
+
+.main__image {
+ background-image: url("./image/dalga.jpg");
+ height: 70vh;
+ width: 100%;
+ margin-top: -50px;
+}
+
+.main__image {
+ background-image: url("../image/dalga.jpg");
+ background-position: center;
+ background-size: cover;
+ width: 100%;
+ height: 70vh;
+ background-attachment: fixed;
+ color: white;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+}
+
+.main__image h2 {
+ font-size: 2.6rem;
+}
+
+.main__image p,
+.options p {
+ width: 1150px;
+ font-size: 17px;
+ margin: 30px 0;
+ text-align: center;
+}
+
+.main__image button,
+.options button,
+.wordPress button {
+ background: #745cf9;
+ color: #fff;
+ border: none;
+ width: 200px;
+ height: 50px;
+ font-size: 18px;
+ border-radius: 10px;
+ transition: 0.7s;
+}
+
+.main__image button:hover,
+.options button:hover,
+.wordPress button:hover {
+ background-color: green;
+ color: white;
+ transform: scale(1.1);
+}
+
+.options {
+ background-color: #F5F5F5;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+ padding: 70px 0;
+}
+
+.options h3 {
+ font-size: 27px;
+}
+
+.options img {
+ width: 90%;
+ margin: 50px 0;
+}
+
+.foto__container {
+ background-color: black;
+ width: 100%;
+ color: white;
+ padding: 20px 0;
+}
+
+.foto__container h3 {
+ font-size: 28px;
+}
+
+.foto__container p {
+ font-size: 17px;
+}
+
+.foto__container h3,
+.foto__container p {
+ text-align: center;
+ margin: 35px 0
+}
+
+.fotos {
+ margin: 0 25px;
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.card {
+ width: 25%;
+ height: 280px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ overflow: hidden;
+ transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.project1 {
+ background-image: url("../image/cay.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+
+.project2 {
+ background-image: url("../image/dalga.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+
+.project3 {
+ background-image: url("../image/duzenlik.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+
+.project4 {
+ background-image: url("../image/gezinti.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+
+.project5 {
+ background-image: url("../image/green.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+
+.project6 {
+ background-image: url("../image/insan.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+
+.project7 {
+ background-image: url("../image/MOOND.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+
+.project8 {
+ background-image: url("../image/rive.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+
+.project9 {
+ background-image: url("../image/snow.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+
+.project10 {
+ background-image: url("../image/swiper.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+
+.bgc {
+ width: 100%;
+ margin-top: -68px;
+ overflow: hidden;
+ height: 135%;
+ transition: 0.6s;
+}
+
+.bgc:hover {
+ background-color: rgba(0, 0, 0, 0.553);
+}
+
+.card__content {
+ margin-top: 9%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+ height: 100%;
+ transform: rotateX(-90deg);
+ transform-origin: bottom;
+ transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+ transform: rotateX(0deg);
+}
+
+.card__title {
+ font-size: 22px !important;
+ color: white;
+ font-weight: 700;
+}
+
+
+/* ============================================ Swiper Slide CSS ======================================= */
+.swiper-slide {
+ color: black;
+ font-size: 22px;
+ margin: 40px 50px;
+ border-radius: 15px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ overflow: hidden;
+}
+
+.swiper__contenent__header {
+ background-image: url("../image/swiper.jpg");
+ background-position: center;
+ background-size: cover;
+ background-attachment: fixed;
+ width: 100%;
+ height: 70vh;
+}
+
+.swiper-container {
+ padding: 0 10%;
+}
+
+.swiper__contenent__header h2 {
+ color: white;
+ font-size: 34px;
+ font-weight: 100;
+ display: flex;
+ justify-content: center;
+ padding: 70px 0;
+}
+
+.swiper-slide p {
+ color: white;
+ width: 1000px;
+ font-size: 20px;
+}
+
+.swiper-slide img {
+ width: 85px;
+ height: 85px;
+ border-radius: 50%;
+}
+
+section {
+ overflow-x: hidden;
+}
+
+.next__el {
+ display: flex;
+ margin: 80px 11%;
+ gap: 250px;
+}
+
+.next__el i {
+ color: white;
+ font-size: 40px;
+}
+
+/* ============================================ Swiper Slide CSS ======================================= */
+
+
+
+/* ============================================ Slide Animations ======================================= */
+.tutorial {
+ display: flex;
+ justify-content: center;
+}
+
+.container {
+ display: flex;
+ justify-content: center;
+}
+
+.scroller {
+ display: flex;
+ gap: 25%;
+ animation: scroll 10s linear infinite;
+ animation-delay: calc(10s / -2);
+ padding: 100px 0;
+}
+
+.scroller:nth-child(2) {
+ animation: scroll2 10s linear infinite;
+ animation-delay: calc(10s / -2);
+}
+
+.scroller i {
+ font-size: 50px;
+ padding: 7px 15px;
+}
+
+.blue {
+ color: rgba(0, 0, 255, 0.110);
+ transition: 0.5s;
+}
+
+.blue:hover {
+ color: rgb(0, 0, 255);
+}
+
+.dartblue {
+ color: rgba(0, 0, 139, 0.194);
+ transition: 0.5s;
+}
+
+.dartblue:hover {
+ color: rgb(0, 0, 139);
+}
+
+.red {
+ color: rgba(255, 0, 0, 0.200);
+ transition: 0.5s;
+}
+
+.red:hover {
+ color: red;
+}
+
+.purple {
+ color: rgba(207, 100, 154, 0.226);
+ transition: 0.5s;
+}
+
+.purple:hover {
+ color: rgb(207, 100, 154);
+}
+
+.lightblue {
+ color: rgba(40, 59, 90, 0.281);
+ transition: 0.5s;
+}
+
+.lightblue:hover {
+ color: rgb(40, 59, 90);
+}
+
+.yellow {
+ color: rgba(255, 255, 0, 0.199);
+ transition: 0.5s;
+}
+
+.yellow:hover {
+ color: yellow;
+}
+
+@keyframes scroll {
+ 0% {
+  transform: translateX(100%);
+ }
+
+ 100% {
+  transform: translateX(-100%);
+ }
+}
+
+@keyframes scroll2 {
+ 0% {
+  transform: translateX(0);
+ }
+
+ 100% {
+  transform: translateX(-200%);
+ }
+}
+
+/* ============================================ Slide Animations ======================================= */
+
+.wordPress__container {
+ width: 100%;
+ background-color: rgba(128, 128, 128, 0.372);
+ height: 250px;
+}
+
+.wordPress {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 70px;
+ height: 250px;
+ font-size: 27px;
+}
+
+/* ============================================ Main CSS ======================================= */
+
+
+/* ============================================ FooterCSS ======================================= */
+.social {
+ background-color: black !important;
+ color: white;
+}
+
+.colorlip {
+ font-size: 15px !important;
+ justify-content: space-around !important;
+}
+
+.social-media {
+ display: flex;
+ gap: 27%;
+ font-size: 22px;
+}
+
+.social-media i {
+ transition: 0.5s;
+}
+
+.social-media i:hover {
+ color: blue;
+ transform: rotate(360deg);
+}
+
+header i {
+ display: none !important;
+}
+
+/* ============================================ FooterCSS ======================================= */
+
+
+/* ============================================ Media Screen ======================================= */
+@media only screen and (max-width: 600px) {
+
+ header {
+  display: block;
+  padding: 20px 25px !important;
+  width: 100%;
+ }
+
+ header h1 {
+  font-size: 1.7rem;
+ }
+
+ .mobile{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ }
+
+ nav ul {
+  display: block;
+  margin: 30px 0;
+ }
+
+ nav ul li {
+  margin: 20px 0;
+  display: none;
+ }
+
+ header i {
+  display: block !important;
+  font-size: 20px;
+ }
+
+ .zero {
+  display: flex;
+  height: 120vh;
+  flex-direction: column;
+  gap: 20px;
+ }
+
+ .zero h2 {
+  font-size: 2rem;
+  width: 75%;
+  margin-left: 25%;
+  margin-top: 100px;
+ }
+
+ .zero p {
+  font-size: 1.1rem;
+ }
+
+ .boxs_button {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 auto;
+ }
+
+ .main__left img {
+  width: 100%;
+ }
+
+ .main__right {
+  width: 100%;
+  padding: 0 15px;
+  margin-top: -60px;
+ }
+
+ .main__right p {
+  width: 100%;
+  font-size: 1rem;
+ }
+
+ .two {
+  margin: 40px 0;
+  padding: 70px 0;
+  flex-direction: column;
+  display: flex;
+  gap: 25px;
+  width: 100%;
+ }
+
+ .main__left img {
+  margin-left: -10px;
+ }
+
+ .main__image h2 {
+  font-size: 2rem;
+  text-align: center;
+ }
+
+ .main__image p {
+  width: 100%;
+  font-size: 1.1rem;
+ }
+
+ .options p {
+  font-size: 1.2rem;
+  width: 100%;
+ }
+
+ .card {
+  width: 100%;
+ }
+
+ .swiper__contenent__header {
+  height: 80vh;
+  overflow: hidden;
+ }
+
+ .swiper__contenent__header h2 {
+  font-size: 1.7rem;
+  text-align: center;
+  width: 100%;
+ }
+
+ .swiper-slide p,
+ .swiper-slide i {
+  display: none;
+ }
+
+ .swiper-slide {
+  margin-left: -25px;
+  margin-top: -40px;
+ }
+
+ .next__el {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ section {
+  overflow-x: hidden;
+ }
+
+ .wordPress {
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .wordPress h2 {
+  font-size: 1.8rem;
+ }
+
+ .generally_scrol {
+  border-radius: 10px;
+  width: 50px;
+ }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+ header {
+  display: block;
+  padding: 20px 25px !important;
+  width: 100%;
+ }
+
+ header h1 {
+  font-size: 1.7rem;
+ }
+
+ .mobile{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ }
+
+ nav ul {
+  display: block;
+  margin: 30px 0;
+ }
+
+ nav ul li {
+  margin: 20px 0;
+  display: none;
+ }
+
+ header i {
+  display: block !important;
+  font-size: 20px;
+ }
+}
+
+/* ============================================ Media Screen ======================================= */
